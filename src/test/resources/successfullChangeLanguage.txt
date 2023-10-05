@@ -2,7 +2,7 @@
 
 [
     ['España', 'Logitech: Ratón inalámbrico, teclados, auriculares y videoconferencia'],
-    ['Danmark', 'Logitech: Trådløs mus, tastaturer, headset og videomøder']
+    ['Danmark', 'Logitech: Trådløs mus, tastaturer, headset og videomøder'],
     ['France', 'Logitech: Souris sans fil, claviers, casques et solutions de visioconférence']
 ]
 

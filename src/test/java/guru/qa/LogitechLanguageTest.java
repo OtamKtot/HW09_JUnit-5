@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-public class SelenideLanguageTest extends BaseTest {
+public class LogitechLanguageTest extends BaseTest {
     @BeforeEach
     public void beforeEach() { open("https://www.logitech.com/");}
     String link = "https://www.logitech.com/";

@@ -1,0 +1,18 @@
+0) TEST_DATA:
+
+[
+    ['España', 'Logitech: Ratón inalámbrico, teclados, auriculares y videoconferencia'],
+    ['Danmark', 'Logitech: Trådløs mus, tastaturer, headset og videomøder']
+    ['France', 'Logitech: Souris sans fil, claviers, casques et solutions de visioconférence']
+]
+
+1) ЗАГОЛОВОК: "При смене локали на TEST_DATA[0] на странице отображается заголовк TEST_DATA[1]"
+2) ПРИОРИТЕТ: HIGH
+3) ПРЕДУСЛОВИЯ: Открыт браузер chrome, адрес сайта - https://www.logitech.com/
+
+4) ШАГИ:
+- Нажать на раскрывающийся список локалей
+- Нажать на выбранную TEST_DATA[0] локаль
+
+5) ОЖИДАЕМЫЙ РЕЗУЛЬТАТ
+- На странице отображается заголовок TEST_DATA[1]

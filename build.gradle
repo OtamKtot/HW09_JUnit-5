@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group = 'guru.qa'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    testImplementation ('org.junit.jupiter:junit-jupiter',
+                        'com.codeborne:selenide:6.16.0',
+                        'org.junit.jupiter:junit-jupiter:5.9.3'
+                        )
+}
+
+test {
+    String tags = System.getProperty("tags") != null ? System.getProperty("tags") : "web"
+    useJUnitPlatform {
+        includeTags tags
+    }
+}

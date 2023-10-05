@@ -26,6 +26,6 @@ public class SonySearchTest extends BaseTest {
     void selenideJavaScriptLocaleTest(String searchGame, String searchResult) {
         $(".shared-nav-icon > svg").click();
         $(".search-text-box__input").setValue(searchGame).pressEnter();
-        $(".search-results__tile__content").shouldHave(text(searchResult));
+        $(".search-results").shouldHave(text(searchResult));
     }
 }

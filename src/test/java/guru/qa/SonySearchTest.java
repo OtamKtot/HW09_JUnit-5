@@ -22,8 +22,8 @@ public class SonySearchTest extends BaseTest {
     )
     @Tag("web")
     @DisplayName("Проверка результата поиска игры")
-    @ParameterizedTest(name = "В предложенных вариантах есть Сообщество игры")
-    void selenideJavaScriptLocaleTest(String searchGame, String searchResult) {
+    @ParameterizedTest(name = "В предложенных вариантах есть Сообщество игры {0}")
+    void selenideLocaleTest(String searchGame, String searchResult) {
         $(".shared-nav-icon > svg").click();
         $(".search-text-box__input").setValue(searchGame).pressEnter();
         $(".search-results").shouldHave(text(searchResult));

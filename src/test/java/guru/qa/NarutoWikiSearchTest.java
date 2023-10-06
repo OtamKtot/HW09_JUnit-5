@@ -20,7 +20,7 @@ public class NarutoWikiSearchTest extends BaseTest {
     @Tag("web")
     @DisplayName("Проверка не пустого результата поиска")
     @ParameterizedTest(name="После запроса поиска, отображается информация о наличии страницы по запросу {0}")
-    void selenideJavaScriptLocaleTest (String request) {
+    void selenideLocaleTest (String request) {
         $("#nav-searchInput").setValue(request).pressEnter();
         $(".mw-search-exists").shouldHave(text(request));
     }
